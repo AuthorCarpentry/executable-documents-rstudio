@@ -3,9 +3,7 @@ Author Carpentry : Creating executable documents using RStudio and Rmarkdown
 
 *Content Contributors: Sebastian Karcher *
 
-
 *Lesson Maintainers: Sebastian Karcher *
-
 
 **Lesson status: In Development**
 
