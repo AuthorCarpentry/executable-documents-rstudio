@@ -7,7 +7,7 @@ Author Carpentry : Creating executable documents using RStudio and Rmarkdown
 
 **Lesson status: In Development**
 
-## Learning Objectives:
+## What you will learn:
 
 - Using RStudio as a markdown environment
 - Integrating your data and code with your document
@@ -35,4 +35,10 @@ workflow.
 *These lessons assume no prior knowledge of the skills or tools*, but working
 through this lesson requires working copies of the software described below.
 To most effectively use these materials, please make sure to install everything
-*before* working through this lesson.                    
+*before* working through this lesson. 
+
+## Cheat Sheet
+
+## References
+
+                   
