@@ -120,7 +120,21 @@ reference, so replace each reference with the appropriate tag, for example
 At knit time, the reference list is automatically added to the end of the document under the "References" section, so we can
 now delete the dummy references that were there.  
 
+The citation style defaults to Chicago.  If you want a different citation
+style, you can download a csl style file from the 
+[Zotero style registry](https://www.zotero.org/styles).  We've included an
+Americal Chemical Society CSL file in the data directory.  You add the citation
+style file by using the csl section of the YAML like:
+
+```
+csl: american-chemical-society.csl
+```
+
+After knitting, you'll see the citation style change.
+
 ## Embedded Sub-Documents and Math
+
+
 
 Up to now, we've been writing our report in one Rmarkdown document.  We can
 actually build our document from sub-documents that knitr will integrate into
