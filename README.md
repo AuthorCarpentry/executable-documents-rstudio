@@ -1,44 +1,61 @@
-Author Carpentry : Creating executable documents using RStudio and Rmarkdown
+Author Carpentry at RDA/CODATA DataTrieste2018: Reproducible Research Reporting with Open Authoring Tools
 =======
 
-*Content Contributors: Sebastian Karcher *
-
-*Lesson Maintainers: Sebastian Karcher *
+- *Instructor: Gail Clement* 
+- *Lesson Development: Gail Clement, Tom Morrell, Donna Wrublewski, Robert Doeil, Yuvi Panda*
 
 **Lesson status: In Development**
 
-## What you will learn:
+### What you will learn:
+- Identify the features of a reproducible and dynamic research report that is fit to enter the scholarly record.
+- Describe the benefits of composing research reports with open authoring tools in RStudio.
+- Apply an open, text-based workflow for creating a paper that combines dynamic text, code and software.
+-  Use the Rmarkdown-Knitr-Pandoc workflow to convert openly authored documents for publication, online posting and professional presentation.
+- Demonstrate use of the RStudio GUI platform for authoring and producing professional-quality research reports.
 
-- Using RStudio as a markdown environment
-- Integrating your data and code with your document
-- Creating figures in your document
+### Topics:
 
-## Topics:
+1. [Introduction](00-getting-started.html)
+2. [Basic Markdown](01-markdown.html)
+3. [Document Appearance](02-modifying-appearance.html)
+4. [Dynamic Documents](03-dynamic.html)
+5. [Publishing](04-publishing.html)
 
-1. [Topic 1](00-getting-started.html)
-2. [Topic 2](01-working-with-openrefine.html)
-3. [Topic 3](02-scripts.html)
-4. [Topic 4](03-save-export.html)
-
-### Optional
-- [Topic 5](04-services.html)
-
-## Data
-
-Data files for the lesson are available here: 
-
-## Requirements
+### Requirements
 
 Author Carpentry's teaching is hands-on, so participants are encouraged to use
 their own computers to insure the proper setup of tools for an efficient
 workflow.
 *These lessons assume no prior knowledge of the skills or tools*, but working
-through this lesson requires working copies of the software described below.
-To most effectively use these materials, please make sure to install everything
-*before* working through this lesson. 
+through this lesson requires working copies of R and Rstudio.
 
-## Cheat Sheet
+Please follow these installation instructions before coming to the workshop
 
-## References
+#### Windows
+Install R by downloading and running this
+[.exe](https://cran.r-project.org/bin/windows/base/release.htm) file from CRAN. 
+Also, please install the [RStudio
+IDE](https://www.rstudio.com/products/rstudio/download/#download). 
+Note that if you have separate user and admin accounts, you should run the 
+installers as administrator (right-click on .exe file and select "Run as administrator" 
+instead of double-clicking). Otherwise problems may occur later, for example when installing R packages.
 
-                   
+#### macOS
+Install R by downloading and running this
+[.pkg](https://cran.r-project.org/bin/macosx/R-latest.pkg) file from CRAN. Also, 
+please install the [RStudio
+IDE](https://www.rstudio.com/products/rstudio/download/#download).
+
+#### Linux
+You can download the binary files for your distribution from
+[CRAN](https://cran.r-project.org/index.html). Or you can use your package 
+manager (e.g. for Debian/Ubuntu run sudo apt-get install r-base and for 
+Fedora run sudo dnf install R). Also, please install the [RStudio
+IDE](https://www.rstudio.com/products/rstudio/download/#download).
+
+### Workshop Files
+
+You also need to download some files for this workshop [Exercise Files for Participant](https://authorcarpentry.github.io/DTSTUDENT2018/) PUT IN ZIP LINK.
+Extract this folder and put it on your desktop.  This is where we will be
+working throughout the workshop.
+
