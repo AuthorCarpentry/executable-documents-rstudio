@@ -89,11 +89,19 @@ is set up correctly</p></li>
 
 <hr />
 
-<h3>Software Check</h3>
+<h3>Intro to Rstudio and the knitr package</h3>
 
-<h3>Intro to Rmarkdown and the knitr package</h3>
+<p>Let&rsquo;s open Rstudio (Applications/Rstudio).  Rstudio is the development
+environment where we&rsquo;ll be working on our document.  The main panel you&rsquo;ll see
+on the left is the Console, where you can run R code.  On the right is two
+panels - the upper contains your environment (what R can access), and the lower
+contains the files on your computer.</p>
 
-<p>For this lesson, we need the following packages:</p>
+<p>The first thing to do is install some packages.  RStudio makes it easy to
+install new packages to do things you want.  You can find packages by going to
+the &lsquo;Packages&rsquo; tab in the lower right panel.  You can install new packages by
+clicking the Install button and typing in the package name.  For this workshop
+we&rsquo;ll need the following packages:</p>
 
 <ul>
 <li><code>tidyverse</code></li>
@@ -102,13 +110,13 @@ is set up correctly</p></li>
 <li><code>httpuv</code></li>
 </ul>
 
-<p>Open up RStudio, go to the packages panel, and search for each package to
-install.</p>
+<p>Let&rsquo;s get started by creating a new project.  Go to File/New Project and select
+Existing Directory.  Browse to the data folder that your previously
+downloaded and put on your Desktop and click Create Project.</p>
 
 <p>Now let&rsquo;s actually work with a document.  Click in the &lsquo;Files&rsquo; tab in the lower
-right panel of RStudio.  Let&rsquo;s find the <code>DTYourName2018</code> folder we cloned above.   You&rsquo;ll see
-lots of files we will use during this lesson.  Double click on
-<code>Base_2013_day1_in.Rmd</code>.</p>
+right panel of RStudio.  You&rsquo;ll see lots of files we will use during this lesson.  Double click on
+<code>Base_2013_test.Rmd</code>.</p>
 
 <p>You&rsquo;ll see the document open in a new panel on the left hand side of the
 screen.  In the top section of the document, replace the name with your own and change the date to today.</p>
@@ -135,7 +143,7 @@ output knit will produce a different result.  Try replacing <code>word_document<
 with <code>slidy_presentation</code>.  This is a html presentation that you can use in
 any web browser.</p>
 
-<p>We&rsquo;ll continue working on this document to create a reproducible research report !</p>
+<p>We&rsquo;ll continue working on this document to create a reproducible research report!</p>
 
 <p>Next: <a href="01-markdown.html">Basic Markdown</a></p>
 
