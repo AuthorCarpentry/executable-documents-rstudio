@@ -29,7 +29,10 @@ workflow.
 *These lessons assume no prior knowledge of the skills or tools*, but working
 through this lesson requires working copies of R and Rstudio.
 
-Please follow these installation instructions before coming to the workshop
+R is a programming language that is especially powerful for data exploration,
+visualization, and statistical analysis. To interact with R, we use RStudio.
+For this workshop you'll need to install both R (version 3.4.3 or newer) and
+RStudio on your computer. Please follow these installation instructions before coming to the workshop
 
 #### Windows
 Install R by downloading and running this

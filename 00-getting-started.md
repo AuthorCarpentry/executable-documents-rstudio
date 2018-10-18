@@ -54,24 +54,32 @@ We now have the tools to create a first class research report that meets these 4
   is set up correctly
 
 *****
-### Software Check
+### Intro to Rstudio and the knitr package
 
-### Intro to Rmarkdown and the knitr package
+Let's open Rstudio (Applications/Rstudio).  Rstudio is the development
+environment where we'll be working on our document.  The main panel you'll see
+on the left is the Console, where you can run R code.  On the right is two
+panels - the upper contains your environment (what R can access), and the lower
+contains the files on your computer.
 
-For this lesson, we need the following packages:
+The first thing to do is install some packages.  RStudio makes it easy to
+install new packages to do things you want.  You can find packages by going to
+the 'Packages' tab in the lower right panel.  You can install new packages by
+clicking the Install button and typing in the package name.  For this workshop
+we'll need the following packages:
 
 - `tidyverse`
 - `DT`
 - `rorcid`
 - `httpuv`
 
-Open up RStudio, go to the packages panel, and search for each package to
-install.
+Let's get started by creating a new project.  Go to File/New Project and select
+Existing Directory.  Browse to the data folder that your previously
+downloaded and put on your Desktop and click Create Project.  
 
 Now let's actually work with a document.  Click in the 'Files' tab in the lower
-right panel of RStudio.  Let's find the `DTYourName2018` folder we cloned above.   You'll see
-lots of files we will use during this lesson.  Double click on
-`Base_2013_day1_in.Rmd`.  
+right panel of RStudio.  You'll see lots of files we will use during this lesson.  Double click on
+`Base_2013_test.Rmd`.  
 
 You'll see the document open in a new panel on the left hand side of the
 screen.  In the top section of the document, replace the name with your own and change the date to today.  
@@ -98,7 +106,7 @@ output knit will produce a different result.  Try replacing `word_document`
 with `slidy_presentation`.  This is a html presentation that you can use in 
 any web browser.
 
-We'll continue working on this document to create a reproducible research report !
+We'll continue working on this document to create a reproducible research report!
 
 Next: [Basic Markdown](01-markdown.html)
 

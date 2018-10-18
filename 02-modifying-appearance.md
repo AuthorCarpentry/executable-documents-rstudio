@@ -64,7 +64,7 @@ HTMl output  by adding the line `css: custom.css` to your YAML header.
 You can customize Word document styling, such as fonts, sizing, and section
 numbering, within the  Word program.  You can then provide `knitr` with the stylized Word document to use as a style sheet of sorts .  Because editing word document styling
 is a pain, we've created a Word document with section numbering that you can use.
-You just need to add `reference_docx: "Base_2013_day3_style.docx"` to the YAML
+You just need to add `reference_docx: "Base_2013_style.docx"` to the YAML
 header for the `word_document` type and knit to see the result.
 
 ## Integrated Code

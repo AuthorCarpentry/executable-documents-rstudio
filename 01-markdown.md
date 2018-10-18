@@ -23,7 +23,9 @@ It's time to start building your own Reproducible Report! The course instructor 
 
 #### Step 1. 
 
-In RStudio, navigate through the `Files` pane to the `DTYourName2018` subfolder and open the exercise file `Base_2013_day2_in.Rmd`. Immediately save it as `Base_2013_day2_out.Rmd` and close the 'in' file. We will  continue to work on the 'out' file during this lesson.  By the end of the course, that 'out' file will be ready to publish online, showcasing your open authoring skills!
+Now open the exercise file `Base_2013_start.Rmd`. Immediately save it as
+`Base_2013.Rmd` and close the 'start' file. We will  continue to work on the
+Base_2013 file during this lesson.  By the end of the course, that file will be ready to publish online, showcasing your open authoring skills!
 
 #### Step 2. Note that the `.Rmd` exercise file has three main components:
 
