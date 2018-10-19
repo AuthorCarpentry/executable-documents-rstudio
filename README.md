@@ -1,4 +1,4 @@
-Reproducible Research Reporting with R and RStudia
+Reproducible Research Reporting with R and RStudio
 =======
 
 - *Maintainers: Gail Clement, Tom Morrell* 
