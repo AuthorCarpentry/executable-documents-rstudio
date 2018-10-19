@@ -1,0 +1,17 @@
+params:
+  institution:
+    choices:
+    - International Centre for Theoretical Physics
+    - Trieste Polytechnic Institute
+    - CODATA-RDA Summer School
+    - Elsevier Inc
+    input: select
+    label: 'Institution:'
+    value: Trieste Polytechnic
+  fee:
+    choices:
+    - True
+    - False
+    input: select
+    label: 'Include only journals that charge a fee:'
+    value: True
