@@ -37,7 +37,7 @@ Source: Royal Society of London, <http://rstl.royalsocietypublishing.org/>
 
 We now have the tools to create a first class research report that meets these 4 requirements and is also Transparent, Re-Useable, and Reproducible. 
 
-**A Reproducible Research Report **:
+**A Reproducible Research Report **
 
 1. Written and coded in plain text which is universally portable and readable by humans and machines
 1. Combines text explanations with code and dynamically generated figures, tables, and plots, all in one executable file
@@ -48,9 +48,9 @@ We now have the tools to create a first class research report that meets these 4
 
 #### Let's look at a reproducible report 
 
-- We'll create our own in the next two days!
+(Demo of example report)
 
-- The first step in getting this dynamic document is making sure our software
+We'll create our own in the next two days!  The first step in getting this dynamic document is making sure our software
   is set up correctly
 
 *****
