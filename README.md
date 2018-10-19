@@ -58,7 +58,7 @@ IDE](https://www.rstudio.com/products/rstudio/download/#download).
 
 ### Workshop Files
 
-You also need to download some files for this workshop [Exercise Files for Participant](https://authorcarpentry.github.io/DTSTUDENT2018/) PUT IN ZIP LINK.
+You also need to [download some files](data.zip) for this workshop.
 Extract this folder and put it on your desktop.  This is where we will be
 working throughout the workshop.
 
