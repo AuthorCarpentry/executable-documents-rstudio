@@ -84,6 +84,21 @@ Let's parameterize our exercise file to demonstrate the power of this dynamic re
 
 4. Knit to HTML and find where your manually typed institution name has been replaced with the auto-populated Institution name you selected.
 
+Paramters can do more than control text.  Let's use a paramter to make changes
+to a graph
+
+1. Open the file `insert_params2.txt` and copy all of the code. Close the file
+and paste the code into the YAML header
+
+2. Open the file `insert_plot1_params.txt` and copy all the code.  Close the
+file and paste the code into the first plot code chunk
+
+3. Knit with parameters.  You'll see a new option that will set whether the
+plot is for all DOAJ seal journals or just those that charge a fee.
+
+If there is time, you can adapt this parameter code to the other plot in the
+report.
+
 ## Autopopulate your Biosketch from your ORCID profile on the web
 
 This final dynamic feature demonstrates the power of keeping your updated professional information in your ORCID profile, and copying information from it as you need it in your reproducible report.
