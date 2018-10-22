@@ -96,6 +96,20 @@ We can do the same thing to generate additional plots.  Add the code from
 `insert_plot2.txt` with the
 label 'plot_license' before the "Metadata" section.
 
+## Dates
+
+We can have R automatically populate dates based on the date we knit the
+document. The 'insert_dates.txt' file has code snippets that use the function
+`Sys.Date()` to get the date from your computer.  The first line is a section
+of code enclosed in `"` (double quotation marks) for the YAML header (all
+values in the YAML header use double quotes).  Kint the
+document and you see that this small snippet of code is executed and the date
+appears.  There are two additional code lines that include just a single \`
+backtick that signified a small code chunk.  These can be just one line, and
+don't have the control of the three backtick code chunks we learned earlier.
+Knit your document and you'll see the dates appear in place of these code
+chunks.
+
 ## References
 
 References are another area of document preparation where automation is really

@@ -25,7 +25,7 @@ It's time to start building your own Reproducible Report! The course instructor 
 
 Now open the exercise file `Base_2013_start.Rmd`. Immediately save it as
 `Base_2013.Rmd` and close the 'start' file. We will  continue to work on the
-Base_2013 file during this lesson.  By the end of the course, that file will be ready to publish online, showcasing your open authoring skills!
+Base_2013 file during the rest of the workshop.  By the end that file will be ready to publish online, showcasing your open authoring skills!
 
 #### Step 2. Note that the `.Rmd` exercise file has three main components:
 
@@ -39,10 +39,9 @@ Base_2013 file during this lesson.  By the end of the course, that file will be 
 
 **YAML Header**
 
-In the `author` field, enter your own Name and Institution, with the entire string of text surrounded by "quotes"   
-
-In the `date` field, enter the R code to call today's date from your computer. You may copy and paste this code from the R script file `insert_dates.R`
-
+The YAML header includes information about the document.  In the `author`
+field, enter your own Name and Institution, with the entire string of text
+surrounded by "quotes".     
 
 **Text Document**
 
@@ -66,7 +65,10 @@ meaning. For example,
 
 1. Create headings and subheadings by inserting one or more \# symbols at the beginning of a line, followed by a space. One \# is for a level one header, \#\# for a level two header and so on. 
 
-For this Exercise, assign Level 1, 2, and 3 headers so the exercise file reflects the sections of a Data Management Plan. To find the start of each major section, where a Level 1 header should be placed, look for horizontal rules marked with four asterisks \*\*\*\*. To identify the eight main section headers, you may wish to consult the little booklet _DCC Checklist for a Data Management Plan_ provided earlier.
+For this Exercise, assign Level 1, 2, and 3 headers so the exercise file reflects the sections 
+of a Data Management Plan. To find the start of each major section, where a Level 1 header should be placed, 
+look for horizontal rules marked with four asterisks \*\*\*\*. To identify the eight main section headers, 
+you may wish to consult the [DCC Checklist for a Data Management Plan](http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP_Checklist_2013.pdf).
 
 2. Add emphasis to the text, where appropriate, using single or double asterisks or single or double underscores. Either type of character works, as long as it is matched on both sides of the emphasized phrase. You may find text phrases that need emphasis such as "Not Applicable"; the title of the Project; and titles of reports or articles.
 
@@ -90,8 +92,6 @@ The result will display as oddly large text indented from the left. We'll fix th
   
 7. Create multiple links to content elsewhere by placing each link text in square brackets \[\] followed by the link address in round parentheses \(\). Don't forget to include http:// or https:// at the beginning of the link address. 
 
-There is also one link that connects to another location within the document...can you find that one and see how this kind of link is marked up?
-
 8. Create one inline image by adding an exclamation mark \! in the text, then
 placing the image name  in square brackets \[\] followed by the image file
 address in round parentheses \(\).  (TIP: Make sure there is no space between the text in brackets and the address in parentheses!)
@@ -103,10 +103,6 @@ address in round parentheses \(\).  (TIP: Make sure there is no space between th
 11. In the "Data being collected" section, where the text guesstimates the number of journals in the dataset as "over 1000", replace with an accurate count performed by the computer. You may copy and paste the code from the file `insert_jnls_count.R`
 
 12. You did alot of work! Save the file and knit it to both HTML and Word. Compare the results to see if anything changes based on output file format.
-
-If successful, save the exercise  file again under the name `Base_2013_day3_in.Rmd`. You'll pickup in the next lesson right where you leave off today.
-
-13. Minimize the RStudio window and return to your shell and navigate to the folder where the your workshop files reside. Using your new Git skills, add the files, commit them, and push the files back up to the GitHub repository. That way the current version of your files is saved in GitHub and all your work is backed up!
 
 **Congratulations on completing the first draft of your Reproducible Report!**
 

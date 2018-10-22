@@ -60,7 +60,7 @@ Our investigation builds on the recent work of Castro et al (2017) who assessed 
 
 In this study, we will include only the most reputable open access journals in our assessment  of journal sharing policies, regardless of language. We will analyze all journals that have attained the Seal of Approval from the Directory of Open Access Journals, DOAJ (http://doaj.org) (shown below). We will apply the same coding framework devised by Castro et al (2017)  to the DOAJ Seal journals. We contend that a more rigorously screened population of open access journals, regardless of language, will yield a more accurate and reproducible set of findings than those published from the previous study.
 
-DOAJ Seal of Approval doaj_seal_logo.png
+DOAJ Seal of Approval images/doaj_seal_logo.png
 
 DOAJ Seal journals are considered the most reputable because they: 
 
@@ -76,7 +76,7 @@ Researcher ID
 
 ORCID: your ORCID number
 
-Date of First Version 
+Date of First Version
 
 Date of Last Update
 
@@ -142,17 +142,12 @@ Expected Outputs of the project
 |2| doaj_seal_enhanced.csv | enhanced data set with new data | CSV file, plain text format, 2.7 MB   | GitHub repository; Zenodo repository  |
 |3| Data set documentation | json metadata file | plain text file, .1 MB | Datacite registry database; GitHub public repository; Zenodo repository |
 |4| Data Processing steps  | R scripts and comments | R Notebook file, 1 MB | GitHub public repository |
-|5| Data Visualizations  | R scripts and documentation; Plots | R Notebook file, .png image files 4 MB | GitHub public repository |
-|6| Journal article | Rendered report | RMarkdown, 9 MB| Publisher website,   community preprint server|
-
+|5| Data Visualizations  | R scripts and documentation, Plots | R Notebook file, .png image files 4 MB | GitHub public repository |
 
 `Add the following final row of data to the pipe table above:`  
 
-6
-Journal article
+6;Journal article;Rendered report;RMarkdown, 9 MB;Publisher website,   community preprint server
 
-
-Publisher website (open access) and 
 
 
 Metadata

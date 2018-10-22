@@ -89,9 +89,10 @@ an output (like html, docx, or html slides).  Now click the knit button in the u
 left hand corner of the editor.    The first
 time you do this you'll get a message that you need to install some packages.
 You'll want to click Yes and wait for the packages to install.  Once the
-installation you'll see an interactive demonstration document!
+installation you'll see an interactive demonstration document in the newre tab
+in the lower right corner!
 
-You can output this single file in multiple formats.  By default we've been be
+You can output this single markdown document in multiple formats.  By default we've been be
 generating .html files, but we can also output to a Word document.  If you
 click on the downward arrow next to the knit button we see some default
 formats.  Click on Word, and a Word document will appear.  
@@ -100,13 +101,14 @@ While pdf is an option, this requires a TeX distribution which is complex to
 install and beyond the scope of  this course.
 
 You can also select other output forms that aren't listed in the `knitr`
-dropdown.  Take a look at the document.  You'll see in the top a section called
+dropdown.  Take a look at the markdown document.  You'll see in the top a section called
 `output` with sections under it like `html_document`.  If we change the top
 output knit will produce a different result.  Try replacing `word_document`
-with `slidy_presentation`.  This is a html presentation that you can use in 
-any web browser.
+with `slidy_presentation`.  Click Knit, and a html presentation that you can use in 
+any web browser will appear.  If you look at the KNit dropdown, you'll see a
+slidy option is now present.
 
-We'll continue working on this document to create a reproducible research report!
+Close Base_2013_test.Rmd and get ready to create a reproducible research report!
 
 Next: [Basic Markdown](01-markdown.html)
 
