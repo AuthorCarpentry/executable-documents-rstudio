@@ -1,0 +1,8 @@
+if (params$fee == TRUE){
+  selected <- filter(doaj_seal,Fee == 'Yes')
+  titlev <- "License distribution of DOAJ Seal Journals that charge a fee"
+}else{
+  selected <- doaj_seal
+  titlev <- "License distribution of DOAJ Seal Journals"
+}
+ggplot(data=doaj_seal, aes(doaj_seal$JnlLicense, fill=doaj_seal$JnlLicense)) + stat_count() + labs(x="License", y="Count", title = titlev)
