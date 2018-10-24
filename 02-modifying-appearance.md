@@ -40,7 +40,7 @@ the results.
 Section numbering is where the behavior of different output formats (such as HTML versus Word) starts to diverge.
 To add section numbers to our HTML document we just need to add the option
 `number_sections: yes`.  We can also have the TOC appear as a document sidebar
-by adding `toc_float: yes` to our options.
+by adding `toc_float: yes` to our html document options.
 
 For the Word document, section numbering is controlled by a Word style document. Instructions for creating the Word style document are included as an optional exercise below.
 
@@ -51,13 +51,14 @@ The `knitr` package supports built-in themes that format the overall document. [
 here to view available themes](https://bootswatch.com/3/). At the time of this writing, the following themes are confirmed to work with Rmarkdown and knitr: "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", and "yeti". 
 
 You can control
-which theme is used for the document by adding  `theme: readable` to the YAML metadata.  Try
+which theme is used for the document by adding  `theme: readable` in the
+indented portion of the `html_document` section of the YAML metadata.  Try
 switching our a different theme and see what happens! 
 
 These themes are built using standard web Cascading Style Sheets (CSS).  If we don't like how any of the built in themes look, we can add a CSS style sheet to make specific changes.  In our exercise file document, the quoted text looks too big; the font is larger than the surrounding text!  We'll control this oddity with a style sheet. We've provided one for this exercise, so let's view `custom.css` in your file directory to see what it looks like. 
 
 This style sheet edits the spacing and font size of all the quotes in the document. You can then apply this style to your
-HTMl output  by adding the line `css: custom.css` to your YAML header.
+HTML output  by adding the line `css: custom.css` to your YAML header.
 
 ### Word (_Optional step if time allows_)
 
@@ -139,7 +140,8 @@ The citation style defaults to Chicago.  If you want a different citation
 style, you can download a csl style file from the 
 [Zotero style registry](https://www.zotero.org/styles).  We've included an
 Americal Chemical Society CSL file in the data directory.  You add the citation
-style file by using the csl section of the YAML like:
+style file by using the csl section of the YAML (this is a new section, like
+bibliography):
 
 ```
 csl: american-chemical-society.csl
@@ -148,8 +150,6 @@ csl: american-chemical-society.csl
 After knitting, you'll see the citation style change.
 
 ## Embedded Sub-Documents and Math
-
-
 
 Up to now, we've been writing our report in one Rmarkdown document.  We can
 actually build our document from sub-documents that knitr will integrate into

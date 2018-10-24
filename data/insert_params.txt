@@ -1,7 +1,7 @@
 params:
   institution:
     choices:
-    - International Centre for Theoretical Physics
+    - California Institute of Technology
     - Trieste Polytechnic Institute
     - CODATA-RDA Summer School
     - Elsevier Inc

@@ -31,6 +31,13 @@ params:
     input: select
     label: 'Institution:'
     value: Force11 Scholarly Comm Institute
+  fee:
+    choices:
+    - True
+    - False
+    input: select
+    label: 'Include only journals that charge a fee:'
+    value: True
 bibliography:
 - oajournals.bib
 - packages.bib
@@ -207,8 +214,14 @@ Investigators will examine the websites of each journal listed in the `doaj_seal
 
 ```{r plot_license, echo= FALSE, fig.width=10,fig.height=11}
 
-doaj <- read.csv(file = "DOAJ_Seal.csv", header = TRUE)
-ggplot(data=doaj, aes(doaj$JnlLicense, fill=doaj$JnlLicense)) + stat_count() + labs(x="License", y="Count", title = "DOAJ Seal by Country") 
+if (params$fee == TRUE){
+  selected <- filter(doaj_seal,Fee == 'Yes')
+  titlev <- "Country distribution of DOAJ Seal Journals that charge a fee"
+}else{
+  selected <- doaj_seal
+  titlev <- "Country distribution of DOAJ Seal Journals"
+}
+ggplot(data=doaj_seal, aes(doaj_seal$JnlLicense, fill=doaj_seal$JnlLicense)) + stat_count() + labs(x="License", y="Count", title = titlev)
 ```
 
 

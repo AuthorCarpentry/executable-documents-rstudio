@@ -1,9 +1,0 @@
-doaj <- read_csv(file = "DOAJ_Seal.csv")
-if (params$fee == TRUE){
-  selected <- filter(doaj,Fee == 'Yes')
-  titlev <- "Country distribution of DOAJ Seal Journals that charge a fee"
-}else{
-  selected <- doaj
-  titlev <- "Country distribution of DOAJ Seal Journals"
-}
-ggplot(data=selected, aes(selected$PubCountry, fill=selected$PubCountry)) + stat_count() + labs(x="Country", y="Count",title=titlev) + theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))

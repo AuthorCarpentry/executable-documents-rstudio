@@ -21,7 +21,8 @@ In this lesson we'll add a set of dynamic features to the exercise file and knit
 
 ## Auto-generate bibliography files
 
-Have you wondered why the YAML in the exercise file contains two separate bibliography files (`oajournals.bib` and `packages.bib`)? Why not make one concatenated file?
+Have you wondered why we include two separate bibliography files
+(`oajournals.bib` and `packages.bib`) in the data folder? Why not make one concatenated file?
 
 The reason for the two files is that some of the references cited in our reproducible report represent `R` packages used to generate the report. `R` packages are continually updated in the [The Comprehensive R Archive Network, CRAN](https://cran.r-project.org/). If we manually maintained the bibliography file we'd be editing it continually to reflect the new version of any `R` package we use.
 
@@ -33,7 +34,10 @@ In this exercise, let's add the citation for the `DT` and the  `rorcid` packages
 2. Open the script file `write_bib.R` and on the third line -- the one that starts with `write_bib(c("tidyverse"...)` add `DT` and `rorcid`, each in quotes, to the list of packages you want references for.
 3. Save the changes to `write_bib.R`
 4. Select all of the code in  `write_bib.R` with your mouse. Once it is all highlighted, press `command+enter` to execute the code. You can watch the code run in your console window.
-5. Open `packages.bib` file once again to see that it now includes a citation for the `DT` and `rorcid` packages we'll be using in a bit. Close that file and put a smiley sticky on your laptop to signify happiness. 
+5. Open `packages.bib` file once again to see that it now includes a citation for the `DT` and `rorcid` packages we'll be using in a bit. Close that file.
+6. In the bibliography section of the YAML header, add a new line with
+`- packages.bib`, so you can include the references in your report.
+
 
 ## Building in User Interaction (Part 1)
 
@@ -60,7 +64,7 @@ To accomplish this enhancement, we need to copy a code chunk that formats the un
 
 1. Open the R script `insert_DTtable.R` and copy all of the code with your mouse. Close the file. 
 
-2. In the exercise file, scroll down to the Level One heading **Annexes** and paste in the code chunk. Save the change and knit the document to HTML to see the dynamic data table generated in your report. 
+2. In the exercise file, scroll down to the Level One heading **Supplement** and paste in the code chunk. Save the change and knit the document to HTML to see the dynamic data table generated in your report. 
 
 Knit to HTML and test the interactive features of this table. Why would this dynamic addition to the reproducible report not be supported in Word?
 
@@ -78,11 +82,18 @@ Let's parameterize our exercise file to demonstrate the power of this dynamic re
 
 1. Open the file `insert_params.txt` and copy all of the code. Close the file.
 
-2. In the YAML header of the exercise file ( at the bottom, before the three ending dashes), paste in the copied code `r params$institution`. If you wish to change the names of any of the Institutions listed, feel free to do so. Just make sure there are at least four Institutions included in the list. Save the changes.
+2. In the YAML header of the exercise file ( at the bottom, before the three
+ending dashes), paste in the copied code. If you wish to change the names of 
+any of the Institutions listed, feel free to do so. Just make sure there are at 
+least four Institutions included in the list. Save the changes.
 
-3. In the the body text of the exercise file, find five occurrences of your Institution name. To find the occurrences in the main body of the text, use the 'Find' option under RStudio's Edit menu. Replace each occurrence of an Institution name with the code ``r params$institution``.  When you `knit with parameters`, the inline R code will automatically write in the name of your selected Institution.
+3. In the the body text of the exercise file, find five occurrences of your 
+Institution name. To find the occurrences in the main body of the text, use 
+the 'Find' option under RStudio's Edit menu. Replace each occurrence of an 
+Institution name with the code `\`r params$institution\``.  When you 
+`knit with parameters`, the inline R code will automatically write in the name of your selected Institution.
 
-4. Knit to HTML and find where your manually typed institution name has been replaced with the auto-populated Institution name you selected.
+4. Knit with parameters to HTML and find where your manually typed institution name has been replaced with the auto-populated Institution name you selected.
 
 Paramters can do more than control text.  Let's use a paramter to make changes
 to a graph
@@ -90,8 +101,8 @@ to a graph
 1. Open the file `insert_params2.txt` and copy all of the code. Close the file
 and paste the code into the YAML header
 
-2. Open the file `insert_plot1_params.txt` and copy all the code.  Close the
-file and paste the code into the first plot code chunk
+2. Open the file `insert_plot2_params.txt` and copy all the code.  Close the
+file and paste the code into the plot code chunk titled `plot_license`
 
 3. Knit with parameters.  You'll see a new option that will set whether the
 plot is for all DOAJ seal journals or just those that charge a fee.

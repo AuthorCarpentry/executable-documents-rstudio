@@ -14,7 +14,7 @@
 In your GitHub account, create a new repository (the
 name doesn't matter) and make sure to check the box for Initialize this repo
 with a README file.  Open Finder of Windows explorer on your computer.
-Navigate to the DtSTUDENT2018 directory and find the .html file you've been knitting.
+Navigate to the data directory and find the .html file you've been knitting.
 Rename this file to `index.html`.  
 
 On GitHub, click on 'Upload a file'. Drag

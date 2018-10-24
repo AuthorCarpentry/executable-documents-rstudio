@@ -67,7 +67,7 @@ the results.</p>
 <p>Section numbering is where the behavior of different output formats (such as HTML versus Word) starts to diverge.
 To add section numbers to our HTML document we just need to add the option
 <code>number_sections: yes</code>.  We can also have the TOC appear as a document sidebar
-by adding <code>toc_float: yes</code> to our options.</p>
+by adding <code>toc_float: yes</code> to our html document options.</p>
 
 <p>For the Word document, section numbering is controlled by a Word style document. Instructions for creating the Word style document are included as an optional exercise below.</p>
 
@@ -79,13 +79,14 @@ by adding <code>toc_float: yes</code> to our options.</p>
 here to view available themes</a>. At the time of this writing, the following themes are confirmed to work with Rmarkdown and knitr: &ldquo;default&rdquo;, &ldquo;cerulean&rdquo;, &ldquo;journal&rdquo;, &ldquo;flatly&rdquo;, &ldquo;readable&rdquo;, &ldquo;spacelab&rdquo;, &ldquo;united&rdquo;, &ldquo;cosmo&rdquo;, &ldquo;lumen&rdquo;, &ldquo;paper&rdquo;, &ldquo;sandstone&rdquo;, &ldquo;simplex&rdquo;, and &ldquo;yeti&rdquo;.</p>
 
 <p>You can control
-which theme is used for the document by adding  <code>theme: readable</code> to the YAML metadata.  Try
+which theme is used for the document by adding  <code>theme: readable</code> in the
+indented portion of the <code>html_document</code> section of the YAML metadata.  Try
 switching our a different theme and see what happens!</p>
 
 <p>These themes are built using standard web Cascading Style Sheets (CSS).  If we don&rsquo;t like how any of the built in themes look, we can add a CSS style sheet to make specific changes.  In our exercise file document, the quoted text looks too big; the font is larger than the surrounding text!  We&rsquo;ll control this oddity with a style sheet. We&rsquo;ve provided one for this exercise, so let&rsquo;s view <code>custom.css</code> in your file directory to see what it looks like.</p>
 
 <p>This style sheet edits the spacing and font size of all the quotes in the document. You can then apply this style to your
-HTMl output  by adding the line <code>css: custom.css</code> to your YAML header.</p>
+HTML output  by adding the line <code>css: custom.css</code> to your YAML header.</p>
 
 <h3>Word (<em>Optional step if time allows</em>)</h3>
 
@@ -165,7 +166,8 @@ now delete the dummy references that were there.</p>
 style, you can download a csl style file from the
 <a href="https://www.zotero.org/styles">Zotero style registry</a>.  We&rsquo;ve included an
 Americal Chemical Society CSL file in the data directory.  You add the citation
-style file by using the csl section of the YAML like:</p>
+style file by using the csl section of the YAML (this is a new section, like
+bibliography):</p>
 
 <pre><code>csl: american-chemical-society.csl
 </code></pre>
