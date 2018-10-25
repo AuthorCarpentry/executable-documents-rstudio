@@ -74,7 +74,7 @@ you may wish to consult the [DCC Checklist for a Data Management Plan](http://ww
 
 3. Superscripts and subscripts may be added by surrounding the text with the symbols ^ and ~ , respectively. Find one phrase in the `Project Description` section in want of a superscript and another, a subscript. Mark these occurrences up accordingly. 
 
-4. Find two "quoted"" text blocks in the exercise file and insert the \> symbol at the beginning of each to markup these passages as blockquotes.
+4. Find two "quoted" text blocks in the exercise file and insert the \> symbol at the beginning of each to markup these passages as blockquotes.
 
 The result will display as oddly large text indented from the left. We'll fix the oddly large text with a style sheet in a later lesson.
 
