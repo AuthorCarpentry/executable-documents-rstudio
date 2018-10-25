@@ -72,7 +72,7 @@ you may wish to consult the [DCC Checklist for a Data Management Plan](http://ww
 
 2. Add emphasis to the text, where appropriate, using single or double asterisks or single or double underscores. Either type of character works, as long as it is matched on both sides of the emphasized phrase. You may find text phrases that need emphasis such as "Not Applicable"; the title of the Project; and titles of reports or articles.
 
-3. Superscripts and subscripts may be added by surrounding the text with the symbols \^ and \~ , respectively. Find one phrase in the `Project Description` section in want of a superscript and another, a subscript. Mark these occurrences up accordingly. 
+3. Superscripts and subscripts may be added by surrounding the text with the symbols ^ and ~ , respectively. Find one phrase in the `Project Description` section in want of a superscript and another, a subscript. Mark these occurrences up accordingly. 
 
 4. Find two "quoted"" text blocks in the exercise file and insert the \> symbol at the beginning of each to markup these passages as blockquotes.
 
