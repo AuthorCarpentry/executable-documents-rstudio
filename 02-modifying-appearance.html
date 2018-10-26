@@ -98,6 +98,28 @@ header for the <code>word_document</code> type and knit to see the result.</p>
 
 <h2>Integrated Code</h2>
 
+<h3>Dates</h3>
+
+<p>We can have R automatically populate dates based on the date we knit the
+document. The &lsquo;insert_dates.txt&rsquo; file has code snippets that use the function
+<code>Sys.Date()</code> to get the date from your computer.  The first line is a section
+of code enclosed in <code>&quot;</code> (double quotation marks) for the YAML header (all
+values in the YAML header use double quotes).  Kint the
+document and you see that this small snippet of code is executed and the date
+appears.  There are two additional code lines that include just a single `
+backtick that signified a small code chunk.  These can be just one line, and
+don&rsquo;t have the control of the three backtick code chunks we learned earlier.
+Knit your document and you&rsquo;ll see the dates appear in place of these code
+chunks.</p>
+
+<h3>File information</h3>
+
+<p>We can use inline code chunks to populate information from our data file.<br />
+Add this text under Data Collected: The <code>doaj_seal.csv</code> file currently contains
+<code>r nrow(doaj_seal)</code> reputable open access journals.</p>
+
+<h3>Plots</h3>
+
 <p>The benefit of using Rstudio to author reports is that you have the
 ability to perform computation, live within the document.  First, let&rsquo;s load some
 data into our exercise file.  Look at the top of the file where the DOAJ data is
@@ -123,20 +145,6 @@ this code will also execute and place a plot in the document.</p>
 <p>We can do the same thing to generate additional plots.  Add the code from
 <code>insert_plot2.txt</code> with the
 label &lsquo;plot_license&rsquo; before the &ldquo;Metadata&rdquo; section.</p>
-
-<h2>Dates</h2>
-
-<p>We can have R automatically populate dates based on the date we knit the
-document. The &lsquo;insert_dates.txt&rsquo; file has code snippets that use the function
-<code>Sys.Date()</code> to get the date from your computer.  The first line is a section
-of code enclosed in <code>&quot;</code> (double quotation marks) for the YAML header (all
-values in the YAML header use double quotes).  Kint the
-document and you see that this small snippet of code is executed and the date
-appears.  There are two additional code lines that include just a single `
-backtick that signified a small code chunk.  These can be just one line, and
-don&rsquo;t have the control of the three backtick code chunks we learned earlier.
-Knit your document and you&rsquo;ll see the dates appear in place of these code
-chunks.</p>
 
 <h2>References</h2>
 

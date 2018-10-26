@@ -70,6 +70,28 @@ header for the `word_document` type and knit to see the result.
 
 ## Integrated Code
 
+### Dates
+
+We can have R automatically populate dates based on the date we knit the
+document. The 'insert_dates.txt' file has code snippets that use the function
+`Sys.Date()` to get the date from your computer.  The first line is a section
+of code enclosed in `"` (double quotation marks) for the YAML header (all
+values in the YAML header use double quotes).  Kint the
+document and you see that this small snippet of code is executed and the date
+appears.  There are two additional code lines that include just a single \`
+backtick that signified a small code chunk.  These can be just one line, and
+don't have the control of the three backtick code chunks we learned earlier.
+Knit your document and you'll see the dates appear in place of these code
+chunks.
+
+### File information
+
+We can use inline code chunks to populate information from our data file.  
+Add this text under Data Collected: The `doaj_seal.csv` file currently contains
+`r nrow(doaj_seal)` reputable open access journals.  
+
+### Plots
+
 The benefit of using Rstudio to author reports is that you have the
 ability to perform computation, live within the document.  First, let's load some
 data into our exercise file.  Look at the top of the file where the DOAJ data is
@@ -96,20 +118,6 @@ this code will also execute and place a plot in the document.
 We can do the same thing to generate additional plots.  Add the code from
 `insert_plot2.txt` with the
 label 'plot_license' before the "Metadata" section.
-
-## Dates
-
-We can have R automatically populate dates based on the date we knit the
-document. The 'insert_dates.txt' file has code snippets that use the function
-`Sys.Date()` to get the date from your computer.  The first line is a section
-of code enclosed in `"` (double quotation marks) for the YAML header (all
-values in the YAML header use double quotes).  Kint the
-document and you see that this small snippet of code is executed and the date
-appears.  There are two additional code lines that include just a single \`
-backtick that signified a small code chunk.  These can be just one line, and
-don't have the control of the three backtick code chunks we learned earlier.
-Knit your document and you'll see the dates appear in place of these code
-chunks.
 
 ## References
 
