@@ -88,7 +88,7 @@ chunks.
 
 We can use inline code chunks to populate information from our data file.  
 Add this text under Data Collected: The `doaj_seal.csv` file currently contains
-`r nrow(doaj_seal)` reputable open access journals.  
+\`r nrow(doaj_seal)\` reputable open access journals.  
 
 ### Plots
 
