@@ -5,4 +5,4 @@ if (params$fee == TRUE){
   selected <- doaj_seal
   titlev <- "License distribution of DOAJ Seal Journals"
 }
-ggplot(data=doaj_seal, aes(doaj_seal$JnlLicense, fill=doaj_seal$JnlLicense)) + stat_count() + labs(x="License", y="Count", title = titlev)
+ggplot(data=selected, aes(selected$JnlLicense, fill=selected$JnlLicense)) + stat_count() + labs(x="License", y="Count", title = titlev)
