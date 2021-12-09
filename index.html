@@ -10,91 +10,118 @@
 </header>
 <nav>
 <ul>
-<li><a href=".">Lesson</a></li>
-<li><a href="00-getting-started.html">Getting Started</a></li>
-<li><a href="01-markdown.html">Intro to Markdown</a></li>
-<li><a href="02-modifying-appearance.html">Document Appearance</a></li>
-<li><a href="03-dynamic.html">Dynamic Documents</a></li>
-<li><a href="04-publishing.html">Publishing</a></li>
-<li><a href="mailto:authorcarpentry@library.caltech.edu">Contact Us</a></li>
+<li>
+<a href=".">Lesson</a>
+</li>
+<li>
+<a href="00-getting-started.html">Getting Started</a>
+</li>
+<li>
+<a href="01-markdown.html">Intro to Markdown</a>
+</li>
+<li>
+<a href="02-modifying-appearance.html">Document Appearance</a>
+</li>
+<li>
+<a href="03-dynamic.html">Dynamic Documents</a>
+</li>
+<li>
+<a href="04-publishing.html">Publishing</a>
+</li>
+<li>
+<a href="mailto:authorcarpentry@library.caltech.edu">Contact Us</a>
+</li>
 </ul>
-
 </nav>
 
 <section>
-<h1>Reproducible Research Reporting with R and RStudio</h1>
-
+<h1 id="reproducible-research-reporting-with-r-and-rstudio">
+Reproducible Research Reporting with R and RStudio
+</h1>
 <ul>
-<li><em>Maintainers: Gail Clement, Tom Morrell</em></li>
-<li><em>Lesson Content: Gail Clement, Tom Morrell, Donna Wrublewski, Robert Doiel, Yuvi Panda</em></li>
+<li>
+<em>Maintainers: Gail Clement, Tom Morrell</em>
+</li>
+<li>
+<em>Lesson Content: Gail Clement, Tom Morrell, Donna Wrublewski, Robert Doiel, Yuvi Panda</em>
+</li>
 </ul>
-
-<p><strong>Lesson status: In Development</strong></p>
-
-<h3>What you will learn:</h3>
-
+<p>
+<strong>Lesson status: In Development</strong>
+</p>
+<h3 id="what-you-will-learn">
+What you will learn:
+</h3>
 <ul>
-<li>Identify the features of a reproducible and dynamic research report that is fit to enter the scholarly record.</li>
-<li>Describe the benefits of composing research reports with open authoring tools in RStudio.</li>
-<li>Apply an open, text-based workflow for creating a paper that combines dynamic text, code and software.</li>
-<li>Use the Rmarkdown-Knitr-Pandoc workflow to convert openly authored documents for publication, online posting and professional presentation.</li>
-<li>Demonstrate use of the RStudio GUI platform for authoring and producing professional-quality research reports.</li>
+<li>
+Identify the features of a reproducible and dynamic research report that is fit to enter the scholarly record.
+</li>
+<li>
+Describe the benefits of composing research reports with open authoring tools in RStudio.
+</li>
+<li>
+Apply an open, text-based workflow for creating a paper that combines dynamic text, code and software.
+</li>
+<li>
+Use the Rmarkdown-Knitr-Pandoc workflow to convert openly authored documents for publication, online posting and professional presentation.
+</li>
+<li>
+Demonstrate use of the RStudio GUI platform for authoring and producing professional-quality research reports.
+</li>
 </ul>
-
-<h3>Topics:</h3>
-
-<ol>
-<li><a href="00-getting-started.html">Introduction</a></li>
-<li><a href="01-markdown.html">Basic Markdown</a></li>
-<li><a href="02-modifying-appearance.html">Document Appearance</a></li>
-<li><a href="03-dynamic.html">Dynamic Documents</a></li>
-<li><a href="04-publishing.html">Publishing</a></li>
+<h3 id="topics">
+Topics:
+</h3>
+<ol type="1">
+<li>
+<a href="00-getting-started.html">Introduction</a>
+</li>
+<li>
+<a href="01-markdown.html">Basic Markdown</a>
+</li>
+<li>
+<a href="02-modifying-appearance.html">Document Appearance</a>
+</li>
+<li>
+<a href="03-dynamic.html">Dynamic Documents</a>
+</li>
+<li>
+<a href="04-publishing.html">Publishing</a>
+</li>
 </ol>
-
-<h3>Requirements</h3>
-
-<p>Author Carpentry&rsquo;s teaching is hands-on, so participants are encouraged to use
-their own computers to insure the proper setup of tools for an efficient
-workflow.
-<em>These lessons assume no prior knowledge of the skills or tools</em>, but working
-through this lesson requires working copies of R and Rstudio.</p>
-
-<p>R is a programming language that is especially powerful for data exploration,
-visualization, and statistical analysis. To interact with R, we use RStudio.
-For this workshop you&rsquo;ll need to install both R (version 3.4.3 or newer) and
-RStudio on your computer. Please follow these installation instructions before coming to the workshop</p>
-
-<h4>Windows</h4>
-
-<p>Install R by downloading and running this
-<a href="https://cran.r-project.org/bin/windows/base/release.htm">.exe</a> file from CRAN.
-Also, please install the <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio
-IDE</a>.
-Note that if you have separate user and admin accounts, you should run the
-installers as administrator (right-click on .exe file and select &ldquo;Run as administrator&rdquo;
-instead of double-clicking). Otherwise problems may occur later, for example when installing R packages.</p>
-
-<h4>macOS</h4>
-
-<p>Install R by downloading and running this
-<a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">.pkg</a> file from CRAN. Also,
-please install the <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio
-IDE</a>.</p>
-
-<h4>Linux</h4>
-
-<p>You can download the binary files for your distribution from
-<a href="https://cran.r-project.org/index.html">CRAN</a>. Or you can use your package
-manager (e.g. for Debian/Ubuntu run sudo apt-get install r-base and for
-Fedora run sudo dnf install R). Also, please install the <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio
-IDE</a>.</p>
-
-<h3>Workshop Files</h3>
-
-<p>You also need to <a href="data.zip">download some files</a> for this workshop.
-Extract this folder and put it on your desktop.  This is where we will be
-working throughout the workshop.</p>
-
+<h3 id="requirements">
+Requirements
+</h3>
+<p>
+Author Carpentry’s teaching is hands-on, so participants are encouraged to use their own computers to insure the proper setup of tools for an efficient workflow. <em>These lessons assume no prior knowledge of the skills or tools</em>, but working through this lesson requires working copies of R and Rstudio.
+</p>
+<p>
+R is a programming language that is especially powerful for data exploration, visualization, and statistical analysis. To interact with R, we use RStudio. For this workshop you’ll need to install both R (version 3.4.3 or newer) and RStudio on your computer. Please follow these installation instructions before coming to the workshop
+</p>
+<h4 id="windows">
+Windows
+</h4>
+<p>
+Install R by downloading and running this <a href="https://cran.r-project.org/bin/windows/base/release.htm">.exe</a> file from CRAN. Also, please install the <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>. Note that if you have separate user and admin accounts, you should run the installers as administrator (right-click on .exe file and select “Run as administrator” instead of double-clicking). Otherwise problems may occur later, for example when installing R packages.
+</p>
+<h4 id="macos">
+macOS
+</h4>
+<p>
+Install R by downloading and running this <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">.pkg</a> file from CRAN. Also, please install the <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+</p>
+<h4 id="linux">
+Linux
+</h4>
+<p>
+You can download the binary files for your distribution from <a href="https://cran.r-project.org/index.html">CRAN</a>. Or you can use your package manager (e.g. for Debian/Ubuntu run sudo apt-get install r-base and for Fedora run sudo dnf install R). Also, please install the <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+</p>
+<h3 id="workshop-files">
+Workshop Files
+</h3>
+<p>
+You also need to <a href="data.zip">download some files</a> for this workshop. Extract this folder and put it on your desktop. This is where we will be working throughout the workshop.
+</p>
 </section>
 
 <footer>

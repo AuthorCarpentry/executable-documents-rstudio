@@ -10,136 +10,219 @@
 </header>
 <nav>
 <ul>
-<li><a href=".">Lesson</a></li>
-<li><a href="00-getting-started.html">Getting Started</a></li>
-<li><a href="01-markdown.html">Intro to Markdown</a></li>
-<li><a href="02-modifying-appearance.html">Document Appearance</a></li>
-<li><a href="03-dynamic.html">Dynamic Documents</a></li>
-<li><a href="04-publishing.html">Publishing</a></li>
-<li><a href="mailto:authorcarpentry@library.caltech.edu">Contact Us</a></li>
+<li>
+<a href=".">Lesson</a>
+</li>
+<li>
+<a href="00-getting-started.html">Getting Started</a>
+</li>
+<li>
+<a href="01-markdown.html">Intro to Markdown</a>
+</li>
+<li>
+<a href="02-modifying-appearance.html">Document Appearance</a>
+</li>
+<li>
+<a href="03-dynamic.html">Dynamic Documents</a>
+</li>
+<li>
+<a href="04-publishing.html">Publishing</a>
+</li>
+<li>
+<a href="mailto:authorcarpentry@library.caltech.edu">Contact Us</a>
+</li>
 </ul>
-
 </nav>
 
 <section>
-<h1>Introduction to RMarkdown for Reproducible Reporting</h1>
-
-<p>1 hour</p>
-
+<h1 id="introduction-to-rmarkdown-for-reproducible-reporting">
+Introduction to RMarkdown for Reproducible Reporting
+</h1>
+<p>
+1 hour
+</p>
 <hr />
-
-<h2>Learning Objectives</h2>
-
+<h2 id="learning-objectives">
+Learning Objectives
+</h2>
 <ul>
-<li>Create a Data Management Plan document in Rmarkdown that includes text, figures, tables, inline code, and code chunks. This is the first building block of a reproducible report.</li>
-<li>Explain the technology stack used to create a reproducible report in RStudio</li>
+<li>
+Create a Data Management Plan document in Rmarkdown that includes text, figures, tables, inline code, and code chunks. This is the first building block of a reproducible report.
+</li>
+<li>
+Explain the technology stack used to create a reproducible report in RStudio
+</li>
 </ul>
-
 <hr />
-
-<h2>Technology Stack used in the Reproducible Reporting workflow</h2>
-
-<p><img src="img/rmarkdownflow.png" alt="RMarkdown workflow" /></p>
-
+<h2 id="technology-stack-used-in-the-reproducible-reporting-workflow">
+Technology Stack used in the Reproducible Reporting workflow
+</h2>
+<figure>
+<img src="img/rmarkdownflow.png" alt="RMarkdown workflow" />
+<figcaption aria-hidden="true">
+RMarkdown workflow
+</figcaption>
+</figure>
 <hr />
-
-<h2>Anatomy of an RMarkdown Reproducible Report</h2>
-
-<p>It&rsquo;s time to start building your own Reproducible Report! The course instructor has prepared the basic content as plain, unformatted text and script files, so you can focus on learning Rmarkdown. Let&rsquo;s go step by step:</p>
-
-<h4>Step 1.</h4>
-
-<p>Now open the exercise file <code>Base_2013_start.Rmd</code>. Immediately save it as
-<code>Base_2013.Rmd</code> and close the &lsquo;start&rsquo; file. We will  continue to work on the
-Base_2013 file during the rest of the workshop.  By the end that file will be ready to publish online, showcasing your open authoring skills!</p>
-
-<h4>Step 2. Note that the <code>.Rmd</code> exercise file has three main components:</h4>
-
+<h2 id="anatomy-of-an-rmarkdown-reproducible-report">
+Anatomy of an RMarkdown Reproducible Report
+</h2>
+<p>
+It’s time to start building your own Reproducible Report! The course instructor has prepared the basic content as plain, unformatted text and script files, so you can focus on learning Rmarkdown. Let’s go step by step:
+</p>
+<h4 id="step-1.">
+Step 1.
+</h4>
+<p>
+Now open the exercise file <code>Base_2013_start.Rmd</code>. Immediately save it as <code>Base_2013.Rmd</code> and close the ‘start’ file. We will continue to work on the Base_2013 file during the rest of the workshop. By the end that file will be ready to publish online, showcasing your open authoring skills!
+</p>
+<h4 id="step-2.-note-that-the-.rmd-exercise-file-has-three-main-components">
+Step 2. Note that the <code>.Rmd</code> exercise file has three main components:
+</h4>
 <ul>
-<li>YAML Header: YAML (&ldquo;Yet Another Markdown Language&rdquo;) contains document metadata that knitr and pandoc need to properly render the document and produce an output file. The header is set off with three dashes <code>---</code> above and below to delineate the YAML section. Make sure there is a blank line between the bottom of YAML header and the rest of the document.</li>
-<li>The main body of the text contains the content you compose and markup with Rmarkdown syntax to clarify its meaning and polish its appearance.</li>
-<li>Code chunks contain R code that is executed when the document is knit to HTML, Word, or another output format. We will ignore the code chunks until a bit later in the DT2018 course, when we take on dynamic reporting elements.</li>
+<li>
+YAML Header: YAML (“Yet Another Markdown Language”) contains document metadata that knitr and pandoc need to properly render the document and produce an output file. The header is set off with three dashes <code>—</code> above and below to delineate the YAML section. Make sure there is a blank line between the bottom of YAML header and the rest of the document.
+</li>
+<li>
+The main body of the text contains the content you compose and markup with Rmarkdown syntax to clarify its meaning and polish its appearance.
+</li>
+<li>
+Code chunks contain R code that is executed when the document is knit to HTML, Word, or another output format. We will ignore the code chunks until a bit later in the DT2018 course, when we take on dynamic reporting elements.
+</li>
 </ul>
-
-<h4>Step 3. Edit the exercise file per the following instructions</h4>
-
-<p><strong>YAML Header</strong></p>
-
-<p>The YAML header includes information about the document.  In the <code>author</code>
-field, enter your own Name and Institution, with the entire string of text
-surrounded by &ldquo;quotes&rdquo;.</p>
-
-<p><strong>Text Document</strong></p>
-
-<p>Scholarly publishing requires us to format our text documents to clarify
-meaning. For example,</p>
-
+<h4 id="step-3.-edit-the-exercise-file-per-the-following-instructions">
+Step 3. Edit the exercise file per the following instructions
+</h4>
+<p>
+<strong>YAML Header</strong>
+</p>
+<p>
+The YAML header includes information about the document. In the <code>author</code> field, enter your own Name and Institution, with the entire string of text surrounded by “quotes”.
+</p>
+<p>
+<strong>Text Document</strong>
+</p>
+<p>
+Scholarly publishing requires us to format our text documents to clarify meaning. For example,
+</p>
 <ul>
-<li>Headings and subheadings represent document structure, such as Sections</li>
-<li>White space represents paragraphs or other text blocks with different content</li>
-<li>Block quotes represent text that came from a third-party source</li>
-<li>Font styles such as italic and bold represent emphasis</li>
-<li>Font styles representing non-proportional text distinguish computer code or technical terms</li>
-<li>Lists and Tables represent concisely summarized information or data</li>
-<li>Hyperlinks represent references to related information elsewhere within the document, or outside of the document</li>
-<li>Inline images illustrate points made in the text</li>
-<li>Footnotes represent commentary on the main text</li>
+<li>
+Headings and subheadings represent document structure, such as Sections
+</li>
+<li>
+White space represents paragraphs or other text blocks with different content
+</li>
+<li>
+Block quotes represent text that came from a third-party source
+</li>
+<li>
+Font styles such as italic and bold represent emphasis
+</li>
+<li>
+Font styles representing non-proportional text distinguish computer code or technical terms
+</li>
+<li>
+Lists and Tables represent concisely summarized information or data
+</li>
+<li>
+Hyperlinks represent references to related information elsewhere within the document, or outside of the document
+</li>
+<li>
+Inline images illustrate points made in the text
+</li>
+<li>
+Footnotes represent commentary on the main text
+</li>
 </ul>
-
-<p><strong>Let&rsquo;s add RMarkdown syntax to our report to better communicate its meaning.</strong></p>
-
-<ol>
-<li>Create headings and subheadings by inserting one or more # symbols at the beginning of a line, followed by a space. One # is for a level one header, ## for a level two header and so on.</li>
+<p>
+<strong>Let’s add RMarkdown syntax to our report to better communicate its meaning.</strong>
+</p>
+<ol type="1">
+<li>
+Create headings and subheadings by inserting one or more # symbols at the beginning of a line, followed by a space. One # is for a level one header, ## for a level two header and so on.
+</li>
 </ol>
-
-<p>For this Exercise, assign Level 1, 2, and 3 headers so the exercise file reflects the sections
-of a Data Management Plan. To find the start of each major section, where a Level 1 header should be placed,
-look for horizontal rules marked with four asterisks ****. To identify the eight main section headers,
-you may wish to consult the <a href="http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP_Checklist_2013.pdf">DCC Checklist for a Data Management Plan</a>.</p>
-
-<ol>
-<li><p>Add emphasis to the text, where appropriate, using single or double asterisks or single or double underscores. Either type of character works, as long as it is matched on both sides of the emphasized phrase. You may find text phrases that need emphasis such as &ldquo;Not Applicable&rdquo;; the title of the Project; and titles of reports or articles.</p></li>
-
-<li><p>Superscripts and subscripts may be added by surrounding the text with the symbols ^ and ~ , respectively. Find one phrase in the <code>Project Description</code> section in want of a superscript and another, a subscript. Mark these occurrences up accordingly.</p></li>
-
-<li><p>Find two &ldquo;quoted&rdquo; text blocks in the exercise file and insert the &gt; symbol at the beginning of each to markup these passages as blockquotes.</p></li>
+<p>
+For this Exercise, assign Level 1, 2, and 3 headers so the exercise file reflects the sections of a Data Management Plan. To find the start of each major section, where a Level 1 header should be placed, look for horizontal rules marked with four asterisks ****. To identify the eight main section headers, you may wish to consult the <a href="http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP_Checklist_2013.pdf">DCC Checklist for a Data Management Plan</a>.
+</p>
+<ol start="2" type="1">
+<li>
+<p>
+Add emphasis to the text, where appropriate, using single or double asterisks or single or double underscores. Either type of character works, as long as it is matched on both sides of the emphasized phrase. You may find text phrases that need emphasis such as “Not Applicable”; the title of the Project; and titles of reports or articles.
+</p>
+</li>
+<li>
+<p>
+Superscripts and subscripts may be added by surrounding the text with the symbols ^ and ~ , respectively. Find one phrase in the <code>Project Description</code> section in want of a superscript and another, a subscript. Mark these occurrences up accordingly.
+</p>
+</li>
+<li>
+<p>
+Find two “quoted” text blocks in the exercise file and insert the &gt; symbol at the beginning of each to markup these passages as blockquotes.
+</p>
+</li>
 </ol>
-
-<p>The result will display as oddly large text indented from the left. We&rsquo;ll fix the oddly large text with a style sheet in a later lesson.</p>
-
-<ol>
-<li><p>Bulleted lists: To make unnumbered bullet lists , just start each line with a single asterisk * or - hyphen and a space for the bullet item.  Numbered lists work the same way using 1. 2. 3. or a. b. c.</p>
-
-<p>To make a nested list, indent four spaces below the first level bullet and add another bullet</p>
-
-<p>For this exercise, find the list bullets in need of formatting and add the relevant Rmarkdown syntax. Bullets appear in  the sections &ldquo;Related Policies&rdquo; and in &ldquo;Data Being Collected&rdquo;.</p></li>
-
-<li><p>To display technical terminology or other non-proportional text, use the backtick symbol. A single ` on both sides works for short bits, and  three backticks ``` in a separate line above and below is best for larger codeblocks.</p>
-
-<p>Find the name of a computer file (ending with &lsquo;.csv&rsquo;) in the exercise file and mark it up to represent inline code</p></li>
-
-<li><p>Create multiple links to content elsewhere by placing each link text in square brackets [] followed by the link address in round parentheses (). Don&rsquo;t forget to include http:// or https:// at the beginning of the link address.</p></li>
-
-<li><p>Create one inline image by adding an exclamation mark ! in the text, then
-placing the image name  in square brackets [] followed by the image file
-address in round parentheses ().  (TIP: Make sure there is no space between the text in brackets and the address in parentheses!)</p></li>
-
-<li><p>Add four footnotes to the text in the exercise (replace the placeholder &lsquo;FN-&rsquo;) by inserting the caret symbol ^ outside of square brackets [], and inserting the footnote content inside those brackets.</p></li>
-
-<li><p>Pandoc supports crude tables created with the pipe | and - symbols to designate cell borders, and the + symbol to control text alignment in a cell. The exercise file provides the makings of a pipe table in the &lsquo;Expected Outputs&rsquo; section. The final row of data needs formatting &ndash; insert | symbols six times. Also remove the instructions above that line so the table will knit clean.</p></li>
-
-<li><p>In the &ldquo;Data being collected&rdquo; section, where the text guesstimates the number of journals in the dataset as &ldquo;over 1000&rdquo;, replace with an accurate count performed by the computer. You may copy and paste the code from the file <code>insert_jnls_count.R</code></p></li>
-
-<li><p>You did alot of work! Save the file and knit it to both HTML and Word. Compare the results to see if anything changes based on output file format.</p></li>
+<p>
+The result will display as oddly large text indented from the left. We’ll fix the oddly large text with a style sheet in a later lesson.
+</p>
+<ol start="5" type="1">
+<li>
+<p>
+Bulleted lists: To make unnumbered bullet lists , just start each line with a single asterisk * or - hyphen and a space for the bullet item. Numbered lists work the same way using 1. 2. 3. or a. b. c. 
+</p>
+<p>
+To make a nested list, indent four spaces below the first level bullet and add another bullet
+</p>
+<p>
+For this exercise, find the list bullets in need of formatting and add the relevant Rmarkdown syntax. Bullets appear in the sections “Related Policies” and in “Data Being Collected”.
+</p>
+</li>
+<li>
+<p>
+To display technical terminology or other non-proportional text, use the backtick symbol. A single ` on both sides works for short bits, and three backticks ``` in a separate line above and below is best for larger codeblocks.
+</p>
+<p>
+Find the name of a computer file (ending with ‘.csv’) in the exercise file and mark it up to represent inline code
+</p>
+</li>
+<li>
+<p>
+Create multiple links to content elsewhere by placing each link text in square brackets [] followed by the link address in round parentheses (). Don’t forget to include http:// or https:// at the beginning of the link address.
+</p>
+</li>
+<li>
+<p>
+Create one inline image by adding an exclamation mark ! in the text, then placing the image name in square brackets [] followed by the image file address in round parentheses (). (TIP: Make sure there is no space between the text in brackets and the address in parentheses!)
+</p>
+</li>
+<li>
+<p>
+Add four footnotes to the text in the exercise (replace the placeholder ‘FN-’) by inserting the caret symbol ^ outside of square brackets [], and inserting the footnote content inside those brackets.
+</p>
+</li>
+<li>
+<p>
+Pandoc supports crude tables created with the pipe | and - symbols to designate cell borders, and the + symbol to control text alignment in a cell. The exercise file provides the makings of a pipe table in the ‘Expected Outputs’ section. The final row of data needs formatting – insert | symbols six times. Also remove the instructions above that line so the table will knit clean.
+</p>
+</li>
+<li>
+<p>
+In the “Data being collected” section, where the text guesstimates the number of journals in the dataset as “over 1000”, replace with an accurate count performed by the computer. You may copy and paste the code from the file <code>insert_jnls_count.R</code>
+</p>
+</li>
+<li>
+<p>
+You did alot of work! Save the file and knit it to both HTML and Word. Compare the results to see if anything changes based on output file format.
+</p>
+</li>
 </ol>
-
-<p><strong>Congratulations on completing the first draft of your Reproducible Report!</strong></p>
-
+<p>
+<strong>Congratulations on completing the first draft of your Reproducible Report!</strong>
+</p>
 <hr />
-
-<p>Previous: <a href="00-getting-started.html">Getting Started with Markdown</a> Next:
-<a href="02-modifying-appearance.html">Modifying Appearance</a></p>
-
+<p>
+Previous: <a href="00-getting-started.html">Getting Started with Markdown</a> Next: <a href="02-modifying-appearance.html">Modifying Appearance</a>
+</p>
 </section>
 
 <footer>

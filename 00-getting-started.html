@@ -10,143 +10,180 @@
 </header>
 <nav>
 <ul>
-<li><a href=".">Lesson</a></li>
-<li><a href="00-getting-started.html">Getting Started</a></li>
-<li><a href="01-markdown.html">Intro to Markdown</a></li>
-<li><a href="02-modifying-appearance.html">Document Appearance</a></li>
-<li><a href="03-dynamic.html">Dynamic Documents</a></li>
-<li><a href="04-publishing.html">Publishing</a></li>
-<li><a href="mailto:authorcarpentry@library.caltech.edu">Contact Us</a></li>
+<li>
+<a href=".">Lesson</a>
+</li>
+<li>
+<a href="00-getting-started.html">Getting Started</a>
+</li>
+<li>
+<a href="01-markdown.html">Intro to Markdown</a>
+</li>
+<li>
+<a href="02-modifying-appearance.html">Document Appearance</a>
+</li>
+<li>
+<a href="03-dynamic.html">Dynamic Documents</a>
+</li>
+<li>
+<a href="04-publishing.html">Publishing</a>
+</li>
+<li>
+<a href="mailto:authorcarpentry@library.caltech.edu">Contact Us</a>
+</li>
 </ul>
-
 </nav>
 
 <section>
-<h1>Introduction to Reproducible Reporting</h1>
-
-<p>30 Minutes</p>
-
+<h1 id="introduction-to-reproducible-reporting">
+Introduction to Reproducible Reporting
+</h1>
+<p>
+30 Minutes
+</p>
 <hr />
-
-<h2>Learning Objectives</h2>
-
+<h2 id="learning-objectives">
+Learning Objectives
+</h2>
 <ul>
-<li>Discuss characteristics of a reproducible research report (also called &lsquo;executable research compendium&rsquo; or &lsquo;Paper of the Future&rsquo;)</li>
-<li>Explore a real-life reproducible research report</li>
-<li>Install R packages needed to create a research report in RStudio</li>
-<li>Render a provided reproducible report to HMTL, docx, and HTML slides using Rstudio, Rmarkdown, and the knitr package</li>
+<li>
+Discuss characteristics of a reproducible research report (also called ‘executable research compendium’ or ‘Paper of the Future’)
+</li>
+<li>
+Explore a real-life reproducible research report
+</li>
+<li>
+Install R packages needed to create a research report in RStudio
+</li>
+<li>
+Render a provided reproducible report to HMTL, docx, and HTML slides using Rstudio, Rmarkdown, and the knitr package
+</li>
 </ul>
-
 <hr />
-
-<h3>Has the research paper changed much in the last ~400 years?</h3>
-
+<h3 id="has-the-research-paper-changed-much-in-the-last-400-years">
+Has the research paper changed much in the last ~400 years?
+</h3>
 <ul>
-<li><em>Philosophical Transactions of the Royal Society</em> first published in 1665<br /></li>
-<li>This first scientific journal established the important principles of scientific priority and peer review, which have become the central foundations of scientific journals ever since.</li>
+<li>
+<em>Philosophical Transactions of the Royal Society</em> first published in 1665<br />
+</li>
+<li>
+This first scientific journal established the important principles of scientific priority and peer review, which have become the central foundations of scientific journals ever since.
+</li>
 </ul>
-
-<p><img src="img/transactions.gif" alt="Transactions of the Royal Society, 1714" />
-Source: Royal Society of London, <a href="http://rstl.royalsocietypublishing.org/">http://rstl.royalsocietypublishing.org/</a></p>
-
-<h3>Fast forward ~ 400 years</h3>
-
-<h4>The scholarly record requires four key functions of a research report:</h4>
-
-<ol>
-<li>Registration of the author&rsquo;s claim</li>
-<li>Certification that the research was conducted properly</li>
-<li>Dissemination of the work to the right audiences</li>
-<li>Preservation to ensure a permanent public record of the work that can be found and cited</li>
+<p>
+<img src="img/transactions.gif" alt="Transactions of the Royal Society, 1714" /> Source: Royal Society of London, <a href="http://rstl.royalsocietypublishing.org/" class="uri">http://rstl.royalsocietypublishing.org/</a>
+</p>
+<h3 id="fast-forward-400-years">
+Fast forward ~ 400 years
+</h3>
+<h4 id="the-scholarly-record-requires-four-key-functions-of-a-research-report">
+The scholarly record requires four key functions of a research report:
+</h4>
+<ol type="1">
+<li>
+Registration of the author’s claim
+</li>
+<li>
+Certification that the research was conducted properly
+</li>
+<li>
+Dissemination of the work to the right audiences
+</li>
+<li>
+Preservation to ensure a permanent public record of the work that can be found and cited
+</li>
 </ol>
-
-<p>(Rallison, S.P., &lsquo;What are Journals For?&rsquo;, <em>Ann R Coll Surg Engl.</em> 2015 Mar; 97(2): 89-91. DOI:10.1308/003588414X14055925061397)</p>
-
+<p>
+(Rallison, S.P., ‘What are Journals For?’, <em>Ann R Coll Surg Engl.</em> 2015 Mar; 97(2): 89-91. DOI:10.1308/003588414X14055925061397)
+</p>
 <hr />
-
-<h4>Why static PDFs are an underwhelming use of today&rsquo;s technology</h4>
-
-<p>We now have the tools to create a first class research report that meets these 4 requirements and is also Transparent, Re-Useable, and Reproducible.</p>
-
-<p>**A Reproducible Research Report **</p>
-
-<ol>
-<li>Written and coded in plain text which is universally portable and readable by humans and machines</li>
-<li>Combines text explanations with code and dynamically generated figures, tables, and plots, all in one executable file</li>
-<li>Replaces static numbers, dates, and other values in the text with code that generates the most accurate and up-to-date values by the computer</li>
-<li>Allows the author to work in the same environment used to write the code and analyze the data, and generate the plots and tables</li>
-<li>They allow the author to compose one report and then compile/render it to many different outputs, depending on the need</li>
+<h4 id="why-static-pdfs-are-an-underwhelming-use-of-todays-technology">
+Why static PDFs are an underwhelming use of today’s technology
+</h4>
+<p>
+We now have the tools to create a first class research report that meets these 4 requirements and is also Transparent, Re-Useable, and Reproducible.
+</p>
+<p>
+<strong>A Reproducible Research Report </strong>
+</p>
+<ol type="1">
+<li>
+Written and coded in plain text which is universally portable and readable by humans and machines
+</li>
+<li>
+Combines text explanations with code and dynamically generated figures, tables, and plots, all in one executable file
+</li>
+<li>
+Replaces static numbers, dates, and other values in the text with code that generates the most accurate and up-to-date values by the computer
+</li>
+<li>
+Allows the author to work in the same environment used to write the code and analyze the data, and generate the plots and tables
+</li>
+<li>
+They allow the author to compose one report and then compile/render it to many different outputs, depending on the need
+</li>
 </ol>
-
-<h4>Let&rsquo;s look at a reproducible report</h4>
-
-<p>(Demo of example report)</p>
-
-<p>We&rsquo;ll create our own in the next two days!  The first step in getting this dynamic document is making sure our software
-  is set up correctly</p>
-
+<h4 id="lets-look-at-a-reproducible-report">
+Let’s look at a reproducible report
+</h4>
+<p>
+(Demo of example report)
+</p>
+<p>
+We’ll create our own in the next two days! The first step in getting this dynamic document is making sure our software is set up correctly
+</p>
 <hr />
-
-<h3>Intro to Rstudio and the knitr package</h3>
-
-<p>Let&rsquo;s open Rstudio (Applications/Rstudio).  Rstudio is the development
-environment where we&rsquo;ll be working on our document.  The main panel you&rsquo;ll see
-on the left is the Console, where you can run R code.  On the right is two
-panels - the upper contains your environment (what R can access), and the lower
-contains the files on your computer.</p>
-
-<p>The first thing to do is install some packages.  RStudio makes it easy to
-install new packages to do things you want.  You can find packages by going to
-the &lsquo;Packages&rsquo; tab in the lower right panel.  You can install new packages by
-clicking the Install button and typing in the package name.  For this workshop
-we&rsquo;ll need the following packages:</p>
-
+<h3 id="intro-to-rstudio-and-the-knitr-package">
+Intro to Rstudio and the knitr package
+</h3>
+<p>
+Let’s open Rstudio (Applications/Rstudio). Rstudio is the development environment where we’ll be working on our document. The main panel you’ll see on the left is the Console, where you can run R code. On the right is two panels - the upper contains your environment (what R can access), and the lower contains the files on your computer.
+</p>
+<p>
+The first thing to do is install some packages. RStudio makes it easy to install new packages to do things you want. You can find packages by going to the ‘Packages’ tab in the lower right panel. You can install new packages by clicking the Install button and typing in the package name. For this workshop we’ll need the following packages:
+</p>
 <ul>
-<li><code>tidyverse</code></li>
-<li><code>DT</code></li>
-<li><code>rorcid</code></li>
-<li><code>httpuv</code></li>
+<li>
+<code>tidyverse</code>
+</li>
+<li>
+<code>DT</code>
+</li>
+<li>
+<code>rorcid</code>
+</li>
+<li>
+<code>httpuv</code>
+</li>
 </ul>
-
-<p>Let&rsquo;s get started by creating a new project.  Go to File/New Project and select
-Existing Directory.  Browse to the data folder that your previously
-downloaded and put on your Desktop and click Create Project.</p>
-
-<p>Now let&rsquo;s actually work with a document.  Click in the &lsquo;Files&rsquo; tab in the lower
-right panel of RStudio.  You&rsquo;ll see lots of files we will use during this lesson.  Double click on
-<code>Base_2013_test.Rmd</code>.</p>
-
-<p>You&rsquo;ll see the document open in a new panel on the left hand side of the
-screen.  In the top section of the document, replace the name with your own and change the date to today.</p>
-
-<p>Knitting is a process in Rstudio that takes a text document and turns it into
-an output (like html, docx, or html slides).  Now click the knit button in the upper
-left hand corner of the editor.    The first
-time you do this you&rsquo;ll get a message that you need to install some packages.
-You&rsquo;ll want to click Yes and wait for the packages to install.  Once the
-installation you&rsquo;ll see an interactive demonstration document in the newre tab
-in the lower right corner!</p>
-
-<p>You can output this single markdown document in multiple formats.  By default we&rsquo;ve been be
-generating .html files, but we can also output to a Word document.  If you
-click on the downward arrow next to the knit button we see some default
-formats.  Click on Word, and a Word document will appear.</p>
-
-<p>While pdf is an option, this requires a TeX distribution which is complex to
-install and beyond the scope of  this course.</p>
-
-<p>You can also select other output forms that aren&rsquo;t listed in the <code>knitr</code>
-dropdown.  Take a look at the markdown document.  You&rsquo;ll see in the top a section called
-<code>output</code> with sections under it like <code>html_document</code>.  If we change the top
-output knit will produce a different result.  Try replacing <code>word_document</code>
-with <code>slidy_presentation</code>.  Click Knit, and a html presentation that you can use in
-any web browser will appear.  If you look at the KNit dropdown, you&rsquo;ll see a
-slidy option is now present.</p>
-
-<p>Close Base_2013_test.Rmd and get ready to create a reproducible research report!</p>
-
-<p>Next: <a href="01-markdown.html">Basic Markdown</a></p>
-
+<p>
+Let’s get started by creating a new project. Go to File/New Project and select Existing Directory. Browse to the data folder that your previously downloaded and put on your Desktop and click Create Project.
+</p>
+<p>
+Now let’s actually work with a document. Click in the ‘Files’ tab in the lower right panel of RStudio. You’ll see lots of files we will use during this lesson. Double click on <code>Base_2013_test.Rmd</code>.
+</p>
+<p>
+You’ll see the document open in a new panel on the left hand side of the screen. In the top section of the document, replace the name with your own and change the date to today.
+</p>
+<p>
+Knitting is a process in Rstudio that takes a text document and turns it into an output (like html, docx, or html slides). Now click the knit button in the upper left hand corner of the editor. The first time you do this you’ll get a message that you need to install some packages. You’ll want to click Yes and wait for the packages to install. Once the installation you’ll see an interactive demonstration document in the newre tab in the lower right corner!
+</p>
+<p>
+You can output this single markdown document in multiple formats. By default we’ve been be generating .html files, but we can also output to a Word document. If you click on the downward arrow next to the knit button we see some default formats. Click on Word, and a Word document will appear.
+</p>
+<p>
+While pdf is an option, this requires a TeX distribution which is complex to install and beyond the scope of this course.
+</p>
+<p>
+You can also select other output forms that aren’t listed in the <code>knitr</code> dropdown. Take a look at the markdown document. You’ll see in the top a section called <code>output</code> with sections under it like <code>html_document</code>. If we change the top output knit will produce a different result. Try replacing <code>word_document</code> with <code>slidy_presentation</code>. Click Knit, and a html presentation that you can use in any web browser will appear. If you look at the KNit dropdown, you’ll see a slidy option is now present.
+</p>
+<p>
+Close Base_2013_test.Rmd and get ready to create a reproducible research report!
+</p>
+<p>
+Next: <a href="01-markdown.html">Basic Markdown</a>
+</p>
 </section>
 
 <footer>
