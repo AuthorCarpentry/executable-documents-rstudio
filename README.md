@@ -1,7 +1,7 @@
 Reproducible Research Reporting with R and RStudio
 =======
 
-- *Maintainers: Gail Clement, Tom Morrell* 
+- *Maintainers: Tom Morrell* 
 - *Lesson Content: Gail Clement, Tom Morrell, Donna Wrublewski, Robert Doiel, Yuvi Panda*
 
 **Lesson status: In Development**
