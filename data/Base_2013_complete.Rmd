@@ -6,6 +6,9 @@ author:
 - Key Personnel - Donna Wrublewski and Robert Doiel, Caltech
 date: "`r format(Sys.Date(), '%A, %B %d, %Y')`"
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
   html_document:
     code_folding: hide
     css: custom.css
@@ -20,6 +23,7 @@ output:
   word_document:
     toc: yes
     toc_depth: '2'
+always_allow_html: yes
 params:
   institution:
     choices:
@@ -33,11 +37,11 @@ params:
     value: Force11 Scholarly Comm Institute
   fee:
     choices:
-    - True
-    - False
+    - yes
+    - no
     input: select
     label: 'Include only journals that charge a fee:'
-    value: True
+    value: yes
 bibliography:
 - oajournals.bib
 - packages.bib
@@ -50,9 +54,9 @@ references:
   - family: Allaire
     given: J. J.
   - family: Grolemund
-    given: Garrett  
-  URL: 'http://dx.doi.org/10.1038/nmat3283'
-  ISBN: 9781138359338
+    given: Garrett
+  URL: http://dx.doi.org/10.1038/nmat3283
+  ISBN: null
   publisher: Chapman & Hall/CRC
   type: book
   issued:
